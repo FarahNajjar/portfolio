@@ -1,38 +1,121 @@
 .App {
   text-align: center;
+  
 }
+
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* about section*/
+#about {
+  padding: 2rem;
+  background: #f4f4f4;
+  font-size: 1.2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#about h2 {
+  text-align: center;
+}
+
+/* Header section*/
+header {
+  background: #333;
   color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 50px;
+}
+
+/* projects section*/
+#projects {
+  padding: 2rem;
+  
+}
+
+.project {
+  background: #f4f4f4;
+  margin: 3rem 0;
+  padding: 1rem;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project:hover {
+  transform: scale(1.02); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .project button {
+  background-color: #959a96; 
+  border: none; 
+  color: white; 
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px;
+  margin: 10px 0; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.5s; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#projects .project button:hover {
+  background-color: #67645e; /* Darker green background on hover */
+}
+
+/* contact section*/
+#contact {
+  background-color: #f9f9f9; 
+  padding: 1rem;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+#contact a {
+  color: #3498db; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #1c557b; 
+  text-decoration: underline;
+}
+
+#contact p {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+#contact svg {
+  margin-right: 8px;
+  vertical-align: middle;
 }
